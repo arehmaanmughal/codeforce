@@ -6,7 +6,7 @@ const Hero = () => {
     <section
       className="h-screen sm:h-[600px] flex items-center justify-center text-center bg"
     >
-      <div className="bg-black bg-opacity-40 h-full w-full p-10 flex items-center justify-center">
+      <div className="bg-black bg-opacity-60 h-full w-full p-10 flex items-center justify-center">
         <div>
         <h1 className="text-4xl font-bold text-white">
           Welcome to CodeForce
