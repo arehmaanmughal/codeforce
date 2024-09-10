@@ -40,8 +40,8 @@ const Header = () => {
 
       {/* Drawer menu for small screens */}
       <div
-        className={`sm:hidden flex flex-col items-center py-6 bg-white absolute h-screen w-1/2 top-0 right-0 shadow-md transition-transform ${
-          isOpen ? "transform translate-y-0" : "transform -translate-y-full"
+        className={`sm:hidden flex flex-col items-center py-6 bg-white absolute h-screen w-3/4 top-0 right-0 shadow-md transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <button onClick={toggleDrawer}>
