@@ -10,16 +10,16 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Name"
-              className="w-full px-4 py-2 bg-white rounded-md shadow-sm"
+              className="w-full px-4 py-2 bg-white rounded-md shadow-sm outline-none"
             />
             <input
               type="email"
               placeholder="Email"
-              className="w-full px-4 py-2 bg-white rounded-md shadow-sm"
+              className="w-full px-4 py-2 bg-white rounded-md shadow-sm outline-none"
             />
             <textarea
               placeholder="Message"
-              className="w-full px-4 py-2 bg-white rounded-md shadow-sm h-32"
+              className="w-full px-4 py-2 bg-white rounded-md shadow-sm h-32 outline-none"
             ></textarea>
             <button className="bg-blue-500 text-white px-6 py-3 rounded-lg">
               Send Message
