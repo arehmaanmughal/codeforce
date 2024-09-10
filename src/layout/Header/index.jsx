@@ -16,7 +16,7 @@ const Header = () => {
 
         {/* Drawer toggle button, visible only on small screens */}
         <div className="sm:hidden">
-          <button onClick={toggleDrawer}>
+          <button onClick={toggleDrawer} className="flex items-center">
             <FaBars size={24} />
           </button>
         </div>
@@ -40,13 +40,15 @@ const Header = () => {
 
       {/* Drawer menu for small screens */}
       <div
-        className={`sm:hidden flex flex-col items-center py-6 bg-white absolute h-screen w-3/4 top-0 right-0 shadow-md transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-screen w-3/4 bg-white shadow-md transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <button onClick={toggleDrawer}>
-          <FaTimes size={24} />
-        </button>
+        <div className="flex justify-end p-4">
+          <button onClick={toggleDrawer}>
+            <FaTimes size={24} />
+          </button>
+        </div>
         <ul className="flex flex-col items-center space-y-4 py-6 text-gray-800">
           <li>
             <Link to="" onClick={toggleDrawer}>
