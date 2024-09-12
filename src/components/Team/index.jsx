@@ -1,31 +1,6 @@
 import React from "react";
-import profile1 from "../../assets/images/e1.png";
-import profile2 from "../../assets/images/e2.png";
-import profile3 from "../../assets/images/e3.jpg";
-import profile4 from "../../assets/images/e4.jpg";
 import { Link } from "react-router-dom";
-const teamMembers = [
-  {
-    name: "John Doe",
-    role: "CEO & Founder",
-    image: profile1, // Replace with actual image path
-  },
-  {
-    name: "Jane Smith",
-    role: "Lead Developer",
-    image: profile4, // Replace with actual image path
-  },
-  {
-    name: "Emily Johnson",
-    role: "UI/UX Designer",
-    image: profile2, // Replace with actual image path
-  },
-  {
-    name: "Michael Lee",
-    role: "Marketing Strategist",
-    image: profile3, // Replace with actual image path
-  },
-];
+import teamData from "../../data/team";
 
 const Team = () => {
   return (
@@ -35,7 +10,7 @@ const Team = () => {
         <p className="mt-2 text-slate-300">Our dedicated team of professionals</p>
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {teamMembers.map((member, index) => (
+          {teamData.map((member, index) => (
             <Link
               to=""
               key={index}

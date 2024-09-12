@@ -26,7 +26,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="bg-blue-800 text-slate-50 px-6 py-3 rounded-lg"
+              className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-6 py-3 rounded-lg"
             >
               Send Message
             </button>
