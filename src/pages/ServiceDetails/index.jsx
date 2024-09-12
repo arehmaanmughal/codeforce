@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import servicesData from "../../data/services";
-import Hero from "../../components/Hero";
 
 const ServiceDetails = () => {
   const { serviceId } = useParams(); // Get the service ID from the URL
   const service = servicesData.find((service) => service.id === serviceId);
+
+  // Scroll to the top when the component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!service) {
     return (

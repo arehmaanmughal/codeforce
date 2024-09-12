@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50  transition-colors duration-300 py-4 px-4 ${
-        scrollPosition > 50 ? "bg-slate-800 shadow-2xl" : "bg-transparent"
+        scrollPosition > 50 && location.pathname === "/" ? "bg-slate-800 shadow-2xl" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto flex justify-between items-center">
@@ -46,7 +46,7 @@ const Header = () => {
               to="/"
               className={` ${
                 location.pathname === "/" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-2`}
+              } hover:border-b-2 border-orange-600 pb-1`}
             >
               Home
             </Link>
@@ -56,7 +56,7 @@ const Header = () => {
               to="/services"
               className={` ${
                 location.pathname === "/services" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-2`}
+              } hover:border-b-2 border-orange-600 pb-1`}
             >
               Services
             </Link>
@@ -66,7 +66,7 @@ const Header = () => {
               to="/projects"
               className={` ${
                 location.pathname === "/projects" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-2`}
+              } hover:border-b-2 border-orange-600 pb-1`}
             >
               Projects
             </Link>
@@ -76,7 +76,7 @@ const Header = () => {
               to="/about"
               className={` ${
                 location.pathname === "/about" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-2`}
+              } hover:border-b-2 border-orange-600 pb-1`}
             >
               About
             </Link>
@@ -86,7 +86,7 @@ const Header = () => {
               to="/contact"
               className={` ${
                 location.pathname === "/contact" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-2`}
+              } hover:border-b-2 border-orange-600 pb-1`}
             >
               Contact
             </Link>
@@ -109,35 +109,35 @@ const Header = () => {
           <li>
             <Link to="/" className={` ${
                 location.pathname === "/" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-2`} onClick={toggleDrawer}>
+              } hover:border-b-2 border-orange-600 pb-1`} onClick={toggleDrawer}>
               Home
             </Link>
           </li>
           <li>
             <Link to="/services" className={` ${
                 location.pathname === "/services" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-2`} onClick={toggleDrawer}>
+              } hover:border-b-2 border-orange-600 pb-1`} onClick={toggleDrawer}>
               Services
             </Link>
           </li>
           <li>
             <Link to="/projects" className={` ${
                 location.pathname === "/projects" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-2`} onClick={toggleDrawer}>
+              } hover:border-b-2 border-orange-600 pb-1`} onClick={toggleDrawer}>
               Projects
             </Link>
           </li>
           <li>
             <Link to="/about" className={` ${
                 location.pathname === "/about" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-2`} onClick={toggleDrawer}>
+              } hover:border-b-2 border-orange-600 pb-1`} onClick={toggleDrawer}>
               About
             </Link>
           </li>
           <li>
             <Link to="/contact" className={` ${
                 location.pathname === "/contact" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-2`} onClick={toggleDrawer}>
+              } hover:border-b-2 border-orange-600 pb-1`} onClick={toggleDrawer}>
               Contact
             </Link>
           </li>
