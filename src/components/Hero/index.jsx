@@ -9,7 +9,7 @@ const Hero = () => {
           <h1 className="text-4xl lg:text-[60px] font-bold text-slate-50">
             Welcome to CodeForce
           </h1>
-          <p className="mt-4 lg:mt-8 text-lg text-slate-200">
+          <p className="mt-4 lg:mt-8 text-lg text-slate-50">
             We build modern web solutions for your business needs.
           </p>
           <Link

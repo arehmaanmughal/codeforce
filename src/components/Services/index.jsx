@@ -12,7 +12,7 @@ const Services = () => {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {/* Web Development */}
-          <Link to="" className="p-6 bg-slate-900 text-slate-50 shadow-md rounded-md hover:bg-slate-50 hover:text-slate-900">
+          <Link to="" className="p-6 bg-slate-800 text-slate-50 shadow-md rounded-md hover:bg-slate-50 hover:text-slate-800">
             <FaLaptopCode size={32} className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold">
               Web Development
@@ -23,7 +23,7 @@ const Services = () => {
           </Link>
 
           {/* Mobile App Development */}
-          <Link to="" className="p-6 bg-slate-900 text-slate-50 shadow-md rounded-md hover:bg-slate-50 hover:text-slate-900">
+          <Link to="" className="p-6 bg-slate-800 text-slate-50 shadow-md rounded-md hover:bg-slate-50 hover:text-slate-800">
             <FaMobileAlt size={32} className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold">
               Mobile App Development
@@ -34,7 +34,7 @@ const Services = () => {
           </Link>
 
           {/* Cloud Solutions */}
-          <Link to="" className="p-6 bg-slate-900 text-slate-50 shadow-md rounded-md hover:bg-slate-50 hover:text-slate-900">
+          <Link to="" className="p-6 bg-slate-800 text-slate-50 shadow-md rounded-md hover:bg-slate-50 hover:text-slate-800">
             <FaCloud size={32} className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold">
               Cloud Solutions
@@ -45,7 +45,7 @@ const Services = () => {
           </Link>
 
           {/* Digital Marketing */}
-          <Link to="" className="p-6 bg-slate-900 text-slate-50 shadow-md rounded-md hover:bg-slate-50 hover:text-slate-900">
+          <Link to="" className="p-6 bg-slate-800 text-slate-50 shadow-md rounded-md hover:bg-slate-50 hover:text-slate-800">
             <FaChartLine size={32} className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold">
               Digital Marketing
@@ -56,7 +56,7 @@ const Services = () => {
           </Link>
 
           {/* Database Management */}
-          <Link to="" className="p-6 bg-slate-900 text-slate-50 shadow-md rounded-md hover:bg-slate-50 hover:text-slate-900">
+          <Link to="" className="p-6 bg-slate-800 text-slate-50 shadow-md rounded-md hover:bg-slate-50 hover:text-slate-800">
             <FaDatabase size={32} className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold">
               Database Management
@@ -67,7 +67,7 @@ const Services = () => {
           </Link>
 
           {/* Cybersecurity */}
-          <Link to="" className="p-6 bg-slate-900 text-slate-50 shadow-md rounded-md hover:bg-slate-50 hover:text-slate-900">
+          <Link to="" className="p-6 bg-slate-800 text-slate-50 shadow-md rounded-md hover:bg-slate-50 hover:text-slate-800">
             <FaLock size={32} className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold">
               Cybersecurity
