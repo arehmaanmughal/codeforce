@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50  transition-colors duration-300 py-4 px-4 ${
-        scrollPosition > 50 && location.pathname === "/" ? "bg-slate-800 shadow-2xl" : "bg-transparent"
+        scrollPosition > 50 ? "bg-slate-800 shadow-2xl" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto flex justify-between items-center">
