@@ -39,7 +39,7 @@ const Team = () => {
             <Link
               to=""
               key={index}
-              className="bg-slate-900 rounded-lg shadow-lg p-6 text-center transform hover:scale-105 transition duration-300 ease-in-out"
+              className="bg-slate-800 rounded-lg shadow-lg p-6 text-center transform hover:scale-105 transition duration-300 ease-in-out"
             >
               <img
                 src={member.image}

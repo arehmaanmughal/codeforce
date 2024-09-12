@@ -13,16 +13,16 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Name"
-              className="w-full px-4 py-2 bg-slate-900 text-slate-300 placeholder:text-slate-300 rounded-md shadow-sm outline-none"
+              className="w-full px-4 py-2 bg-slate-800 text-slate-300 placeholder:text-slate-300 rounded-md shadow-sm outline-none"
             />
             <input
               type="email"
               placeholder="Email"
-              className="w-full px-4 py-2 bg-slate-900 text-slate-300 placeholder:text-slate-300 rounded-md shadow-sm outline-none"
+              className="w-full px-4 py-2 bg-slate-800 text-slate-300 placeholder:text-slate-300 rounded-md shadow-sm outline-none"
             />
             <textarea
               placeholder="Message"
-              className="w-full px-4 py-2 bg-slate-900 text-slate-300 placeholder:text-slate-300 rounded-md shadow-sm h-32 outline-none"
+              className="w-full px-4 py-2 bg-slate-800 text-slate-300 placeholder:text-slate-300 rounded-md shadow-sm h-32 outline-none"
             ></textarea>
             <button
               type="submit"

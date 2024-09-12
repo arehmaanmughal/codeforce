@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 py-8 text-slate-300">
+    <footer className="bg-slate-800 py-8 text-slate-300">
       <div className="container mx-auto text-center">
         <div className="flex justify-center space-x-6 mb-4">
           {/* Social Media Icons using React Icons */}

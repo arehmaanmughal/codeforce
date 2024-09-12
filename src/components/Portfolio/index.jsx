@@ -43,7 +43,7 @@ const Portfolio = () => {
             <Link
               key={project.id}
               to=""
-              className="bg-slate-900 p-6 shadow-md rounded-lg transform transition-transform duration-500 hover:scale-105"
+              className="bg-slate-800 p-6 shadow-md rounded-lg transform transition-transform duration-500 hover:scale-105"
             >
               <img
                 src={project.image}

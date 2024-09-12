@@ -42,7 +42,7 @@ const Header = () => {
 
       {/* Drawer menu for small screens */}
       <div
-        className={`bg-slate-900 fixed top-0 right-0 h-screen w-3/4 shadow-md transition-transform duration-300 ease-in-out ${
+        className={`bg-slate-800 fixed top-0 right-0 h-screen w-3/4 shadow-md transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
