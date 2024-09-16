@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react'
-import Hero from '../../components/Hero';
-import Services from '../../components/Services';
-import Projects from '../../components/Projects';
-import About from '../../components/About';
-import Contact from '../../components/Contact';
-import Team from '../../components/Team';
+import React, { useEffect } from "react";
+import Hero from "../../components/Hero";
+import Services from "../../components/Services";
+import Projects from "../../components/Projects";
+import About from "../../components/About";
+import Contact from "../../components/Contact";
+import Team from "../../components/Team";
 
 const Home = () => {
   useEffect(() => {
@@ -14,12 +14,12 @@ const Home = () => {
     <div>
       <Hero />
       <Services />
-      <Projects />
-      <Team/>
       <About />
+      <Projects />
+      <Team />
       <Contact />
     </div>
-  )
-}
+  );
+};
 
 export default Home;
