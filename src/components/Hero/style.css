@@ -1,6 +1,42 @@
-.bg{
+/* Background */
+.bg {
   background: url("../../assets/images/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+}
+
+/* Typing animation */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+  0% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: white;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+/* Apply typing animation to the h2 title */
+.animate-typing {
+  animation: typing 3s steps(30) forwards;
+}
+
+/* Blinking cursor */
+.animate-blink {
+  border-right: 4px solid white; /* Only here to handle the cursor */
+  animation: blink 0.75s step-end infinite;
 }

@@ -29,7 +29,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-xl font-bold tracking-wider text-slate-50">
-          Code<span className="text-orange-600">Force</span>
+          Code<span className="text-orange-500">Force</span>
         </Link>
 
         {/* Drawer toggle button, visible only on small screens */}
@@ -45,8 +45,8 @@ const Header = () => {
             <Link
               to="/"
               className={` ${
-                location.pathname === "/" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-1`}
+                location.pathname === "/" ? "border-b-2 border-orange-500" : ""
+              } hover:border-b-2 border-orange-500 pb-1`}
             >
               Home
             </Link>
@@ -55,8 +55,8 @@ const Header = () => {
             <Link
               to="/services"
               className={` ${
-                location.pathname === "/services" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-1`}
+                location.pathname === "/services" ? "border-b-2 border-orange-500" : ""
+              } hover:border-b-2 border-orange-500 pb-1`}
             >
               Services
             </Link>
@@ -65,8 +65,8 @@ const Header = () => {
             <Link
               to="/projects"
               className={` ${
-                location.pathname === "/projects" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-1`}
+                location.pathname === "/projects" ? "border-b-2 border-orange-500" : ""
+              } hover:border-b-2 border-orange-500 pb-1`}
             >
               Projects
             </Link>
@@ -75,8 +75,8 @@ const Header = () => {
             <Link
               to="/about"
               className={` ${
-                location.pathname === "/about" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-1`}
+                location.pathname === "/about" ? "border-b-2 border-orange-500" : ""
+              } hover:border-b-2 border-orange-500 pb-1`}
             >
               About
             </Link>
@@ -85,8 +85,8 @@ const Header = () => {
             <Link
               to="/contact"
               className={` ${
-                location.pathname === "/contact" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-1`}
+                location.pathname === "/contact" ? "border-b-2 border-orange-500" : ""
+              } hover:border-b-2 border-orange-500 pb-1`}
             >
               Contact
             </Link>
@@ -108,36 +108,36 @@ const Header = () => {
         <ul className="flex flex-col items-center space-y-6 py-6 text-slate-50 text-3xl">
           <li>
             <Link to="/" className={` ${
-                location.pathname === "/" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-1`} onClick={toggleDrawer}>
+                location.pathname === "/" ? "border-b-2 border-orange-500" : ""
+              } hover:border-b-2 border-orange-500 pb-1`} onClick={toggleDrawer}>
               Home
             </Link>
           </li>
           <li>
             <Link to="/services" className={` ${
-                location.pathname === "/services" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-1`} onClick={toggleDrawer}>
+                location.pathname === "/services" ? "border-b-2 border-orange-500" : ""
+              } hover:border-b-2 border-orange-500 pb-1`} onClick={toggleDrawer}>
               Services
             </Link>
           </li>
           <li>
             <Link to="/projects" className={` ${
-                location.pathname === "/projects" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-1`} onClick={toggleDrawer}>
+                location.pathname === "/projects" ? "border-b-2 border-orange-500" : ""
+              } hover:border-b-2 border-orange-500 pb-1`} onClick={toggleDrawer}>
               Projects
             </Link>
           </li>
           <li>
             <Link to="/about" className={` ${
-                location.pathname === "/about" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-1`} onClick={toggleDrawer}>
+                location.pathname === "/about" ? "border-b-2 border-orange-500" : ""
+              } hover:border-b-2 border-orange-500 pb-1`} onClick={toggleDrawer}>
               About
             </Link>
           </li>
           <li>
             <Link to="/contact" className={` ${
-                location.pathname === "/contact" ? "border-b-2 border-orange-600" : ""
-              } hover:border-b-2 border-orange-600 pb-1`} onClick={toggleDrawer}>
+                location.pathname === "/contact" ? "border-b-2 border-orange-500" : ""
+              } hover:border-b-2 border-orange-500 pb-1`} onClick={toggleDrawer}>
               Contact
             </Link>
           </li>
