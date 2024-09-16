@@ -1,17 +1,17 @@
-import {
-  FaLaptopCode,
-  FaMobileAlt,
-  FaCloud,
-  FaChartLine,
-  FaDatabase,
-  FaLock,
-} from "react-icons/fa";
 import webImage from "../assets/images/web-dev.jpg"; // Example image paths
 import mobileImage from "../assets/images/mobile-dev.jpg"; // Add actual paths
 import cloudImage from "../assets/images/cloud.jpg";
 import databaseImage from "../assets/images/database.jpg"; // Add actual paths
 import marketingImage from "../assets/images/marketing.jpg";
 import cybersecurityImage from "../assets/images/cybersecurity.jpg";
+import {
+  IoCloudOutline,
+  IoLaptopOutline,
+  IoLockClosedOutline,
+  IoPhonePortraitOutline,
+  IoServerOutline,
+  IoTrendingUpOutline,
+} from "react-icons/io5";
 
 const servicesData = [
   {
@@ -21,7 +21,7 @@ const servicesData = [
     details:
       "Our web development services include building responsive, scalable web applications using modern frameworks like React, Angular, and Vue. We ensure a great user experience across all devices.",
     image: webImage,
-    icon: FaLaptopCode,
+    icon: IoLaptopOutline,
     link: "/services/web-development",
   },
   {
@@ -32,7 +32,7 @@ const servicesData = [
     details:
       "We build native and cross-platform mobile applications with a focus on performance, security, and usability. Whether you're looking for an iOS, Android, or hybrid app, we've got you covered.",
     image: mobileImage,
-    icon: FaMobileAlt,
+    icon: IoPhonePortraitOutline,
     link: "/services/mobile-development",
   },
   {
@@ -43,7 +43,7 @@ const servicesData = [
     details:
       "Our cloud solutions include cloud infrastructure setup, management, and cloud-native application development. We work with major cloud providers like AWS, Google Cloud, and Azure.",
     image: cloudImage,
-    icon: FaCloud,
+    icon: IoCloudOutline,
     link: "/services/cloud-solutions",
   },
   {
@@ -54,7 +54,7 @@ const servicesData = [
     details:
       "Our digital marketing services include SEO, SEM, content marketing, social media marketing, and paid advertising. We help businesses increase visibility and reach their target audience effectively.",
     image: marketingImage,
-    icon: FaChartLine,
+    icon: IoTrendingUpOutline,
     link: "/services/digital-marketing",
   },
   {
@@ -65,7 +65,7 @@ const servicesData = [
     details:
       "Our database management services include database design, setup, optimization, and maintenance. We work with relational and NoSQL databases to ensure data integrity, scalability, and security.",
     image: databaseImage,
-    icon: FaDatabase,
+    icon: IoServerOutline,
     link: "/services/database-management",
   },
   {
@@ -76,7 +76,7 @@ const servicesData = [
     details:
       "We offer cybersecurity services such as vulnerability assessments, security audits, threat detection, and incident response to safeguard your digital assets from cyber threats and data breaches.",
     image: cybersecurityImage,
-    icon: FaLock,
+    icon: IoLockClosedOutline,
     link: "/services/cybersecurity",
   },
   // Add more services as needed
