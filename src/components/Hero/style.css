@@ -4,7 +4,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 /* Typing animation */
@@ -39,4 +38,33 @@
 .animate-blink {
   border-right: 4px solid white; /* Only here to handle the cursor */
   animation: blink 0.75s step-end infinite;
+}
+
+/* Keyframes for bouncing animation */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    scale: 1;
+  }
+  40% {
+    scale: 0.7;
+  }
+  60% {
+    scale: 1;
+  }
+}
+
+/* Link styles and animation */
+.link-animate {
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+/* Additional styles for the link */
+.link-animate:hover {
+  color: #000;
+  background-color: #fff;
 }

@@ -1,26 +1,112 @@
-import React, { useEffect } from "react";
-import Hero from "../../components/Hero";
-import Services from "../../components/Services";
-import Projects from "../../components/Projects";
-import About from "../../components/About";
-import Contact from "../../components/Contact";
-import Team from "../../components/Team";
-import Technologies from "../../components/Technologies";
+import React, { useEffect, lazy, Suspense } from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+// Dynamically import components
+const Hero = lazy(() => import("../../components/Hero"));
+const Services = lazy(() => import("../../components/Services"));
+const Projects = lazy(() => import("../../components/Projects"));
+const About = lazy(() => import("../../components/About"));
+const Contact = lazy(() => import("../../components/Contact"));
+const Team = lazy(() => import("../../components/Team"));
+const Technologies = lazy(() => import("../../components/Technologies"));
 
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Different animations for each section
+  const heroAnimation = {
+    initial: { y: -200, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    transition: { duration: 2 }
+  };
+
+  const servicesAnimation = {
+    initial: { y: 200, opacity: 0 },
+    animate: { y: 1, opacity: 1 },
+    transition: { duration: 1 }
+  };
+
+  const aboutAnimation = {
+    initial: { y: 200, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    transition: { duration: 1 }
+  };
+
+  const projectsAnimation = {
+    initial: { y: 200, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    transition: { duration: 1 }
+  };
+
+  const technologiesAnimation = {
+    initial: { y: 200, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    transition: { duration: 1 }
+  };
+
+  const teamAnimation = {
+    initial: { y: 200, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    transition: { duration: 1 }
+  };
+
+  const contactAnimation = {
+    initial: { y: 200, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    transition: { duration: 1 }
+  };
+
   return (
     <div>
-      <Hero />
-      <Services />
-      <About />
-      <Projects />
-      <Technologies />
-      <Team />
-      <Contact />
+      <Suspense fallback={<div>Loading...</div>}>
+        <SectionAnimation {...heroAnimation}>
+          <Hero />
+        </SectionAnimation>
+
+        <SectionAnimation {...servicesAnimation}>
+          <Services />
+        </SectionAnimation>
+
+        <SectionAnimation {...aboutAnimation}>
+          <About />
+        </SectionAnimation>
+
+        <SectionAnimation {...projectsAnimation}>
+          <Projects />
+        </SectionAnimation>
+
+        <SectionAnimation {...technologiesAnimation}>
+          <Technologies />
+        </SectionAnimation>
+
+        <SectionAnimation {...teamAnimation}>
+          <Team />
+        </SectionAnimation>
+
+        <SectionAnimation {...contactAnimation}>
+          <Contact />
+        </SectionAnimation>
+      </Suspense>
     </div>
+  );
+};
+
+// Reusable SectionAnimation component that receives animation props
+const SectionAnimation = ({ children, initial, animate, transition }) => {
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={initial}
+      animate={inView ? animate : { opacity: 0 }}
+      transition={transition}
+    >
+      {children}
+    </motion.div>
   );
 };
 

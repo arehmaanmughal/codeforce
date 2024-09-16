@@ -18,7 +18,7 @@ const Hero = () => {
           </p>
           <Link
             to=""
-            className="mt-6 inline-block bg-orange-500 text-slate-50 text-xl font-bold px-6 py-2 rounded-full hover:bg-slate-50 hover:text-slate-950"
+            className="mt-6 inline-block bg-orange-500 text-slate-50 text-xl font-bold px-6 py-2 rounded-full link-animate"
           >
             Get in Touch
           </Link>
