@@ -5,7 +5,7 @@ const Contact = () => {
     e.preventDefault();
   };
   return (
-    <section id="contact" className="py-12 px-4 px-sm-0">
+    <section id="contact" className="pb-12 px-4 px-sm-0">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-semibold text-orange-500">Contact Us</h2>
         <form className="mt-8 w-full lg:w-1/2 mx-auto" onSubmit={handleForm}>

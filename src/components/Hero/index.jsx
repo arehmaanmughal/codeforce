@@ -17,7 +17,7 @@ const Hero = () => {
             We build modern web solutions for your business needs.
           </p>
           <Link
-            to=""
+            to="/contact"
             className="mt-6 inline-block bg-orange-500 text-slate-50 text-xl font-bold px-6 py-2 rounded-full link-animate"
           >
             Get in Touch
