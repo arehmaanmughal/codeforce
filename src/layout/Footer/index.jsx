@@ -16,25 +16,25 @@ const Footer = () => {
           {/* Social Media Icons using React Icons */}
           <Link
             to="https://facebook.com"
-            className="text-slate-300 hover:text-slate-50"
+            className="text-slate-300 hover:text-orange-500"
           >
             <FaFacebookF size={20} />
           </Link>
           <Link
             to="https://twitter.com"
-            className="text-slate-300 hover:text-slate-50"
+            className="text-slate-300 hover:text-orange-500"
           >
             <FaTwitter size={20} />
           </Link>
           <Link
             to="https://linkedin.com"
-            className="text-slate-300 hover:text-slate-50"
+            className="text-slate-300 hover:text-orange-500"
           >
             <FaLinkedinIn size={20} />
           </Link>
           <Link
             to="https://instagram.com"
-            className="text-slate-300 hover:text-slate-50"
+            className="text-slate-300 hover:text-orange-500"
           >
             <FaInstagram size={20} />
           </Link>
