@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import projectsData from "../../data/projects";
 
 const Projects = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setIsLoaded(true);
+  };
+
   return (
     <section id="portfolio" className="py-12 px-4 px-sm-0">
       <div className="container mx-auto text-center">
@@ -14,16 +20,25 @@ const Projects = () => {
           {projectsData.map((project) => (
             <div
               key={project.id}
-              
               className="bg-slate-800 p-6 shadow-md rounded-lg transform transition-transform duration-500 hover:scale-105"
             >
               <Link to={`/projects/${project.id}`}>
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  loading="lazy"
-                  className="w-full h-auto rounded-xl"
-                />
+                {/* Placeholder for loading state */}
+                <div className="w-full h-auto relative">
+                  <img
+                    
+                    src={project.image} // Fallback for unsupported browsers
+                    alt={project.title}
+                    loading="lazy"
+                    className={`w-full h-auto rounded-xl transition-opacity duration-500 ${
+                      isLoaded ? "opacity-100" : "opacity-0"
+                    }`}
+                    onLoad={handleImageLoad}
+                  />
+                  {!isLoaded && (
+                    <div className="absolute inset-0 bg-gray-700 animate-pulse rounded-xl"></div>
+                  )}
+                </div>
                 <div className="mt-4">
                   <h3 className="text-xl font-semibold text-slate-50">
                     {project.title}

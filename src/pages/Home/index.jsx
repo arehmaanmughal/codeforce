@@ -18,45 +18,45 @@ const Home = () => {
 
   // Different animations for each section
   const heroAnimation = {
-    initial: { y: -200, opacity: 0 },
+    initial: { y: -300, opacity: 0 },
     animate: { y: 0, opacity: 1 },
-    transition: { duration: 2 }
+    transition: { duration: 2 },
   };
 
   const servicesAnimation = {
-    initial: { y: 200, opacity: 0 },
+    initial: { y: 100, opacity: 0 },
     animate: { y: 1, opacity: 1 },
-    transition: { duration: 1 }
+    transition: { duration: 1 },
   };
 
   const aboutAnimation = {
-    initial: { y: 200, opacity: 0 },
+    initial: { y: 100, opacity: 0 },
     animate: { y: 0, opacity: 1 },
-    transition: { duration: 1 }
+    transition: { duration: 1 },
   };
 
   const projectsAnimation = {
-    initial: { y: 200, opacity: 0 },
+    initial: { y: 100, opacity: 0 },
     animate: { y: 0, opacity: 1 },
-    transition: { duration: 1 }
+    transition: { duration: 1 },
   };
 
   const technologiesAnimation = {
-    initial: { y: 200, opacity: 0 },
+    initial: { y: 100, opacity: 0 },
     animate: { y: 0, opacity: 1 },
-    transition: { duration: 1 }
+    transition: { duration: 1 },
   };
 
   const teamAnimation = {
-    initial: { y: 200, opacity: 0 },
+    initial: { y: 100, opacity: 0 },
     animate: { y: 0, opacity: 1 },
-    transition: { duration: 1 }
+    transition: { duration: 1 },
   };
 
   const contactAnimation = {
-    initial: { y: 200, opacity: 0 },
+    initial: { y: 100, opacity: 0 },
     animate: { y: 0, opacity: 1 },
-    transition: { duration: 1 }
+    transition: { duration: 1 },
   };
 
   return (
