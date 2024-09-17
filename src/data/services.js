@@ -1,9 +1,9 @@
-import webImage from "../assets/images/web-dev.jpg"; // Example image paths
-import mobileImage from "../assets/images/mobile-dev.jpg"; // Add actual paths
-import cloudImage from "../assets/images/cloud.jpg";
-import databaseImage from "../assets/images/database.jpg"; // Add actual paths
-import marketingImage from "../assets/images/marketing.jpg";
-import cybersecurityImage from "../assets/images/cybersecurity.jpg";
+import webImage from "../assets/images/web-dev.webp"; // Example image paths
+import mobileImage from "../assets/images/mobile-dev.webp"; // Add actual paths
+import cloudImage from "../assets/images/cloud.webp";
+import databaseImage from "../assets/images/database.webp"; // Add actual paths
+import marketingImage from "../assets/images/marketing.webp";
+import cybersecurityImage from "../assets/images/database.webp";
 import {
   IoCloudOutline,
   IoLaptopOutline,
