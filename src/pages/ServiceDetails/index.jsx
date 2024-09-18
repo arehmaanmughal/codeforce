@@ -59,7 +59,7 @@ const ServiceDetails = () => {
               })}
             </div>
           </div>
-          <div className="lg:w-3/4 w-full order-1 lg:order-2 mt-8 lg:mt-0 lg:ml-8">
+          <div className="lg:w-3/4 w-full order-1 lg:order-2 lg:ml-8">
             <h2 className="text-3xl font-semibold text-slate-50">
               {service.title}
             </h2>
