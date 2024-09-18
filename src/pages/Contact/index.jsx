@@ -6,7 +6,7 @@ const ContactPage = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className='pt-24'>
+    <div className='pt-32'>
       <Contact/>
     </div>
   )

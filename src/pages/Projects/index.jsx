@@ -6,7 +6,7 @@ const ProjectsPage = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className='pt-12'>
+    <div className='pt-20'>
       <Projects/>
     </div>
   )

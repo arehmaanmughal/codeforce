@@ -4,7 +4,7 @@ import servicesData from "../../data/services";
 const Services = () => {
   return (
     <section id="services" className="py-12">
-      <div className="container mx-auto text-center px-4 px-sm-0">
+      <div className="container mx-auto text-center px-4">
         <h2 className="text-3xl font-semibold text-orange-500">Our Services</h2>
         <p className="mt-2 text-slate-300">
           We offer a range of services to help you achieve your business goals.

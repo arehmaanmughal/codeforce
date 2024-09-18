@@ -26,26 +26,31 @@ const Header = () => {
     };
   }, []);
 
+   // Check if current path is the home page
+   const isHomePage = location.pathname === "/";
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-10 transition-colors duration-300 py-6 px-4 ${
-        scrollPosition > 50 ? "bg-slate-800 shadow-2xl" : "bg-transparent"
+      className={`fixed top-0 left-0 w-full z-10 transition-colors duration-300 py-6 ${
+        isHomePage && scrollPosition > 50 ? "bg-slate-800 shadow-2xl" : !isHomePage ? "bg-slate-800 shadow-2xl" :  "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-xl font-bold tracking-wider text-slate-50">
+      <div className="container mx-auto flex justify-between items-center px-4">
+        <Link
+          to="/"
+          className="text-2xl font-bold tracking-wider text-slate-50"
+        >
           Code<span className="text-orange-500">Force</span>
         </Link>
 
         {/* Drawer toggle button, visible only on small screens */}
-        <div className="sm:hidden">
+        <div className="md:hidden">
           <button onClick={toggleDrawer} className="flex items-center">
             <FaBars size={24} color="rgb(248 250 252)" />
           </button>
         </div>
 
         {/* Links for large screens */}
-        <ul className="hidden sm:flex space-x-6 text-slate-50 relative">
+        <ul className="hidden md:flex space-x-6 text-white text-xl relative">
           <li>
             <Link
               to="/"
@@ -116,26 +121,28 @@ const Header = () => {
           transition={{ duration: 0.5 }}
           onMouseLeave={() => setShowServicesDropdown(false)}
         >
-          <div className="container mx-auto flex justify-between items-center">
+          <div className="container mx-auto flex justify-between items-center px-4">
             <Link
               to="/"
-              className="text-xl font-bold tracking-wider text-slate-50"
+              className="text-2xl font-bold tracking-wider text-slate-50"
+              onClick={() => setShowServicesDropdown(false)}
             >
               Code<span className="text-orange-500">Force</span>
             </Link>
 
             {/* Drawer toggle button, visible only on small screens */}
-            <div className="sm:hidden">
+            <div className="md:hidden">
               <button onClick={toggleDrawer} className="flex items-center">
                 <FaBars size={24} color="rgb(248 250 252)" />
               </button>
             </div>
 
             {/* Links for large screens */}
-            <ul className="hidden sm:flex space-x-6 text-slate-50 relative">
+            <ul className="hidden md:flex space-x-6 text-xl text-slate-50 relative">
               <li>
                 <Link
                   to="/"
+                  onClick={() => setShowServicesDropdown(false)}
                   className={`${
                     location.pathname === "/"
                       ? "border-b-2 border-orange-500"
@@ -148,6 +155,7 @@ const Header = () => {
               <li onMouseEnter={() => setShowServicesDropdown(true)}>
                 <Link
                   to="/services"
+                  onClick={() => setShowServicesDropdown(false)}
                   className={` ${
                     location.pathname === "/services"
                       ? "border-b-2 border-orange-500"
@@ -160,6 +168,7 @@ const Header = () => {
               <li>
                 <Link
                   to="/projects"
+                  onClick={() => setShowServicesDropdown(false)}
                   className={`${
                     location.pathname === "/projects"
                       ? "border-b-2 border-orange-500"
@@ -172,6 +181,7 @@ const Header = () => {
               <li>
                 <Link
                   to="/about"
+                  onClick={() => setShowServicesDropdown(false)}
                   className={`${
                     location.pathname === "/about"
                       ? "border-b-2 border-orange-500"
@@ -184,6 +194,7 @@ const Header = () => {
               <li>
                 <Link
                   to="/contact"
+                  onClick={() => setShowServicesDropdown(false)}
                   className={`${
                     location.pathname === "/contact"
                       ? "border-b-2 border-orange-500"
@@ -195,12 +206,13 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <div className="container mx-auto flex flex-col items-center pt-6">
+          <div className="container mx-auto flex flex-col items-center pt-6 px-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {servicesData.map((service) => (
                 <Link
                   key={service.id}
                   to={service.link}
+                  onClick={() => setShowServicesDropdown(false)}
                   className="bg-slate-700 hover:bg-orange-500 p-6 rounded-lg shadow-md flex items-center gap-3 text-center"
                 >
                   {/* <div className="w-[200px] rounded border border-slate-50">
