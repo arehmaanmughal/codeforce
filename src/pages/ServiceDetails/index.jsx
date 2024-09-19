@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import servicesData from "../../data/services";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const ServiceDetails = () => {
   const { serviceId } = useParams();
@@ -18,7 +20,6 @@ const ServiceDetails = () => {
     );
   }
 
-  // Filter out the currently viewed service from the sidebar
   const otherServices = servicesData.filter(
     (service) => service.id !== serviceId
   );
@@ -44,11 +45,13 @@ const ServiceDetails = () => {
                       className="block"
                       onClick={() => window.scrollTo(0, 0)}
                     >
-                      <img
+                      <LazyLoadImage
                         src={image}
                         alt="service-image"
                         className="rounded-xl mb-3"
-                        loading="lazy"
+                        effect="blur" // Adds a blur effect while the image is loading
+                        width="100%"
+                        height="auto"
                       />
                       <h3 className="text-xl text-center font-semibold">
                         {title}
@@ -65,15 +68,17 @@ const ServiceDetails = () => {
             </h2>
             <p className="mt-4 text-slate-300">{service.details}</p>
             <div className="lg:w-3/4 w-full mt-6">
-              <img
+              <LazyLoadImage
                 src={service.image}
                 alt={service.title}
                 className="rounded-lg shadow-lg w-full h-auto"
-                loading="lazy"
+                effect="blur" // Adds a blur effect while the image is loading
+                width="100%"
+                height="auto"
               />
             </div>
-            {/* Features */}
-            <div className="mt-6">
+             {/* Features */}
+             <div className="mt-6">
               <h3 className="text-2xl font-semibold text-slate-50">
                 Features:
               </h3>
@@ -145,5 +150,6 @@ const ServiceDetails = () => {
     </section>
   );
 };
+
 
 export default ServiceDetails;

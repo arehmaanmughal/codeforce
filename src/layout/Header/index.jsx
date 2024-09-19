@@ -3,7 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa"; // Importing icons for the drawer toggle
 import { motion } from "framer-motion";
 import servicesData from "../../data/services";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -26,12 +27,16 @@ const Header = () => {
     };
   }, []);
 
-   // Check if current path is the home page
-   const isHomePage = location.pathname === "/";
+  // Check if current path is the home page
+  const isHomePage = location.pathname === "/";
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-10 transition-colors duration-300 py-6 ${
-        isHomePage && scrollPosition > 50 ? "bg-slate-800 shadow-2xl" : !isHomePage ? "bg-slate-800 shadow-2xl" :  "bg-transparent"
+      className={`fixed top-0 left-0 w-full z-10 transition-colors duration-300 py-4 ${
+        isHomePage && scrollPosition > 50
+          ? "bg-slate-800 shadow-2xl"
+          : !isHomePage
+          ? "bg-slate-800 shadow-2xl"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto flex justify-between items-center px-4">
@@ -115,7 +120,7 @@ const Header = () => {
       {/* Services dropdown */}
       {showServicesDropdown && (
         <motion.div
-          className="absolute left-0 top-0 bg-slate-800 py-6 text-slate-50 z-0 w-full"
+          className="absolute left-0 top-0 bg-slate-800 py-4 text-slate-50 z-0 w-full"
           initial={{ y: -300, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
@@ -207,28 +212,16 @@ const Header = () => {
             </ul>
           </div>
           <div className="container mx-auto flex flex-col items-center pt-6 px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {servicesData.map((service) => (
                 <Link
                   key={service.id}
                   to={service.link}
                   onClick={() => setShowServicesDropdown(false)}
-                  className="bg-slate-700 hover:bg-orange-500 p-6 rounded-lg shadow-md flex items-center gap-3 text-center"
+                  className="bg-slate-700 hover:bg-orange-500 p-6 rounded-lg shadow-md text-center"
                 >
-                  {/* <div className="w-[200px] rounded border border-slate-50">
-                    <img
-                      src={service.image}
-                      srcSet={`${service.image}?w=200 200w, ${service.image}?w=400 400w`}
-                      sizes="(max-width: 600px) 200px, 400px"
-                      alt="Service Image"
-                      loading="lazy"
-                      className="w-full h-auto object-cover"
-                    />
-                  </div> */}
-                  <div>
-                    <h3 className="font-bold text-lg mb-2">{service.title}</h3>
-                    <p className="text-sm">{service.description}</p>
-                  </div>
+                  <h3 className="font-bold text-lg mb-2">{service.title}</h3>
+                  <p className="text-sm">{service.description}</p>
                 </Link>
               ))}
             </div>

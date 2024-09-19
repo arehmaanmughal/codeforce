@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import projectsData from "../../data/projects";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 const Projects = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -23,22 +24,14 @@ const Projects = () => {
               className="bg-slate-800 p-6 shadow-md rounded-lg transform transition-transform duration-500 hover:scale-105"
             >
               <Link to={`/projects/${project.id}`}>
-                {/* Placeholder for loading state */}
-                <div className="w-full h-auto relative">
-                  <img
-                    
-                    src={project.image} // Fallback for unsupported browsers
-                    alt={project.title}
-                    loading="lazy"
-                    className={`w-full h-auto rounded-xl transition-opacity duration-500 ${
-                      isLoaded ? "opacity-100" : "opacity-0"
-                    }`}
-                    onLoad={handleImageLoad}
-                  />
-                  {!isLoaded && (
-                    <div className="absolute inset-0 bg-gray-700 animate-pulse rounded-xl"></div>
-                  )}
-                </div>
+                <LazyLoadImage
+                  src={project.image}
+                  alt="project-image"
+                  className="rounded-xl"
+                  effect="blur" // Adds a blur effect while the image is loading
+                  width="100%"
+                  height="auto"
+                />
                 <div className="mt-4">
                   <h3 className="text-xl font-semibold text-slate-50">
                     {project.title}

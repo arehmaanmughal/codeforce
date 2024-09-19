@@ -1,7 +1,7 @@
 // projectsData.js
-import project1 from "../assets/images/p1.jpeg";
-import project2 from "../assets/images/p1.jpeg";
-import project3 from "../assets/images/p1.jpeg";
+import project1 from "../assets/images/p2.webp";
+import project2 from "../assets/images/p1.webp";
+import project3 from "../assets/images/p3.webp";
 
 const projectsData = [
   {
