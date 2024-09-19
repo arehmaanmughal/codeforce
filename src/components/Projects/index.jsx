@@ -23,15 +23,22 @@ const Projects = () => {
               key={project.id}
               className="bg-slate-800 p-6 shadow-md rounded-lg transform transition-transform duration-500 hover:scale-105"
             >
-              <Link to={`/projects/${project.id}`}>
-                <LazyLoadImage
-                  src={project.image}
-                  alt="project-image"
-                  className="rounded-xl"
-                  effect="blur" // Adds a blur effect while the image is loading
-                  width="100%"
-                  height="auto"
-                />
+             <Link to={`/projects/${project.id}`}>
+                {/* Lazy load image with blur effect and placeholder */}
+                <div className="w-full h-auto relative">
+                  <LazyLoadImage
+                    src={project.image} // Actual image source
+                    alt="project-image"
+                    className="rounded-xl"
+                    effect="blur" // Adds a blur effect while the image is loading
+                    width="100%"
+                    height="auto"
+                    placeholderSrc="../assets/images/placeholder.webp" // Placeholder image
+                  />
+                  {!project.image && (
+                    <div className="absolute inset-0 bg-gray-700 animate-pulse rounded-xl"></div>
+                  )}
+                </div>
                 <div className="mt-4">
                   <h3 className="text-xl font-semibold text-slate-50">
                     {project.title}
