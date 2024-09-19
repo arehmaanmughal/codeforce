@@ -1,8 +1,8 @@
 import webImage from "../assets/images/web-dev.webp";
 import mobileImage from "../assets/images/mobile-dev.webp";
-import cloudImage from "../assets/images/cloud.webp";
-import databaseImage from "../assets/images/database.webp";
-import marketingImage from "../assets/images/marketing.webp";
+import cloudImage from "../assets/images/cloud.jpg";
+import databaseImage from "../assets/images/database.jpg";
+import marketingImage from "../assets/images/marketing.jpg";
 import cybersecurityImage from "../assets/images/cybersecurity.jpg";
 import {
   IoCloudOutline,

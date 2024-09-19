@@ -1,9 +1,9 @@
-/* .bg {
-  background: url("../../assets/images/background.jpg");
+.bg {
+  background: url("../../assets/images/background_1.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}
 
 /* Keyframes for bouncing animation */
 @keyframes bounce {

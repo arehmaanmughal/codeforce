@@ -55,13 +55,13 @@ const Header = () => {
         </div>
 
         {/* Links for large screens */}
-        <ul className="hidden md:flex space-x-6 text-white text-xl relative">
+        <ul className="hidden md:flex items-center space-x-6 text-white text-xl relative">
           <li>
             <Link
               to="/"
               className={`${
-                location.pathname === "/" ? "border-b-2 border-orange-500" : ""
-              } hover:border-b-2 border-orange-500 pb-1`}
+                location.pathname === "/" ? "text-orange-500 font-bold" : ""
+              } hover:text-orange-500`}
             >
               Home
             </Link>
@@ -71,9 +71,9 @@ const Header = () => {
               to="/services"
               className={`${
                 location.pathname === "/services"
-                  ? "border-b-2 border-orange-500"
+                  ? "text-orange-500 font-bold"
                   : ""
-              } hover:border-b-2 border-orange-500 pb-1`}
+              } hover:text-orange-500`}
             >
               Services{" "}
             </Link>
@@ -83,9 +83,9 @@ const Header = () => {
               to="/projects"
               className={`${
                 location.pathname === "/projects"
-                  ? "border-b-2 border-orange-500"
+                  ? "text-orange-500 font-bold"
                   : ""
-              } hover:border-b-2 border-orange-500 pb-1`}
+              } hover:text-orange-500`}
             >
               Projects
             </Link>
@@ -95,9 +95,9 @@ const Header = () => {
               to="/about"
               className={`${
                 location.pathname === "/about"
-                  ? "border-b-2 border-orange-500"
+                  ? "text-orange-500 font-bold"
                   : ""
-              } hover:border-b-2 border-orange-500 pb-1`}
+              } hover:text-orange-500`}
             >
               About
             </Link>
@@ -107,9 +107,9 @@ const Header = () => {
               to="/contact"
               className={`${
                 location.pathname === "/contact"
-                  ? "border-b-2 border-orange-500"
+                  ? "text-orange-500 font-bold"
                   : ""
-              } hover:border-b-2 border-orange-500 pb-1`}
+              } hover:text-orange-500`}
             >
               Contact
             </Link>
@@ -150,9 +150,9 @@ const Header = () => {
                   onClick={() => setShowServicesDropdown(false)}
                   className={`${
                     location.pathname === "/"
-                      ? "border-b-2 border-orange-500"
+                      ? "text-orange-500 font-bold"
                       : ""
-                  } hover:border-b-2 border-orange-500 pb-1`}
+                  } hover:text-orange-500`}
                 >
                   Home
                 </Link>
@@ -163,9 +163,9 @@ const Header = () => {
                   onClick={() => setShowServicesDropdown(false)}
                   className={` ${
                     location.pathname === "/services"
-                      ? "border-b-2 border-orange-500"
+                      ? "text-orange-500 font-bold"
                       : ""
-                  } hover:border-b-2 border-orange-500 pb-1`}
+                  } hover:text-orange-500`}
                 >
                   Services{" "}
                 </Link>
@@ -176,9 +176,9 @@ const Header = () => {
                   onClick={() => setShowServicesDropdown(false)}
                   className={`${
                     location.pathname === "/projects"
-                      ? "border-b-2 border-orange-500"
+                      ? "text-orange-500 font-bold"
                       : ""
-                  } hover:border-b-2 border-orange-500 pb-1`}
+                  } hover:text-orange-500`}
                 >
                   Projects
                 </Link>
@@ -189,9 +189,9 @@ const Header = () => {
                   onClick={() => setShowServicesDropdown(false)}
                   className={`${
                     location.pathname === "/about"
-                      ? "border-b-2 border-orange-500"
+                      ? "text-orange-500 font-bold"
                       : ""
-                  } hover:border-b-2 border-orange-500 pb-1`}
+                  } hover:text-orange-500`}
                 >
                   About
                 </Link>
@@ -202,9 +202,9 @@ const Header = () => {
                   onClick={() => setShowServicesDropdown(false)}
                   className={`${
                     location.pathname === "/contact"
-                      ? "border-b-2 border-orange-500"
+                      ? "text-orange-500 font-bold"
                       : ""
-                  } hover:border-b-2 border-orange-500 pb-1`}
+                  } hover:text-orange-500`}
                 >
                   Contact
                 </Link>
@@ -245,8 +245,8 @@ const Header = () => {
             <Link
               to="/"
               className={`${
-                location.pathname === "/" ? "border-b-2 border-orange-500" : ""
-              } hover:border-b-2 border-orange-500 pb-1`}
+                location.pathname === "/" ? "text-orange-500 font-bold" : ""
+              } hover:text-orange-500`}
               onClick={toggleDrawer}
             >
               Home
@@ -257,9 +257,9 @@ const Header = () => {
               to="/services"
               className={`${
                 location.pathname === "/services"
-                  ? "border-b-2 border-orange-500"
+                  ? "text-orange-500 font-bold"
                   : ""
-              } hover:border-b-2 border-orange-500 pb-1`}
+              } hover:text-orange-500`}
               onClick={toggleDrawer}
             >
               Services
@@ -270,9 +270,9 @@ const Header = () => {
               to="/projects"
               className={`${
                 location.pathname === "/projects"
-                  ? "border-b-2 border-orange-500"
+                  ? "text-orange-500 font-bold"
                   : ""
-              } hover:border-b-2 border-orange-500 pb-1`}
+              } hover:text-orange-500`}
               onClick={toggleDrawer}
             >
               Projects
@@ -283,9 +283,9 @@ const Header = () => {
               to="/about"
               className={`${
                 location.pathname === "/about"
-                  ? "border-b-2 border-orange-500"
+                  ? "text-orange-500 font-bold"
                   : ""
-              } hover:border-b-2 border-orange-500 pb-1`}
+              } hover:text-orange-500`}
               onClick={toggleDrawer}
             >
               About
@@ -296,9 +296,9 @@ const Header = () => {
               to="/contact"
               className={`${
                 location.pathname === "/contact"
-                  ? "border-b-2 border-orange-500"
+                  ? "text-orange-500 font-bold"
                   : ""
-              } hover:border-b-2 border-orange-500 pb-1`}
+              } hover:text-orange-500`}
               onClick={toggleDrawer}
             >
               Contact
