@@ -120,7 +120,7 @@ const Header = () => {
       {/* Services dropdown */}
       {showServicesDropdown && (
         <motion.div
-          className="absolute left-0 top-0 bg-slate-800 py-4 text-slate-50 z-0 w-full"
+          className="absolute left-0 top-0 bg-blue-500 pt-4 pb-6 text-slate-50 z-0 w-full"
           initial={{ y: -300, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
@@ -212,7 +212,7 @@ const Header = () => {
             </ul>
           </div>
           <div className="container mx-auto flex flex-col items-center pt-6 px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {servicesData.map((service) => (
                 <Link
                   key={service.id}

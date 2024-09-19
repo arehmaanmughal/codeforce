@@ -2,10 +2,10 @@ import React from "react";
 
 import {
   FaFacebookF,
-  FaTwitter,
   FaLinkedinIn,
   FaInstagram,
 } from "react-icons/fa";
+import { FaX, FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -24,7 +24,7 @@ const Footer = () => {
             to="https://twitter.com"
             className="text-slate-300 hover:text-orange-500"
           >
-            <FaTwitter size={20} />
+            <FaXTwitter size={20}/>
           </Link>
           <Link
             to="https://linkedin.com"
