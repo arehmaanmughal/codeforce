@@ -25,7 +25,7 @@ const ServiceDetails = () => {
   );
 
   return (
-    <section id="service-details" className="pt-32 pb-12 px-4 px-sm-0">
+    <section id="service-details" className="pt-24 sm:pt-32 pb-12 px-4 px-sm-0">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-3">
           <div className="w-full order-2 lg:w-1/4 lg:order-1">
