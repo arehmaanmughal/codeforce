@@ -31,11 +31,11 @@ const Header = () => {
   const isHomePage = location.pathname === "/";
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-10 transition-colors duration-300 py-4 ${
+      className={`fixed top-0 left-0 w-full z-10 transition-colors duration-300  py-4 ${
         isHomePage && scrollPosition > 50
-          ? "bg-slate-800 shadow-2xl"
+          ? "bg-slate-800"
           : !isHomePage
-          ? "bg-slate-800 shadow-2xl"
+          ? "bg-slate-800"
           : "bg-transparent"
       }`}
     >
@@ -55,7 +55,7 @@ const Header = () => {
         </div>
 
         {/* Links for large screens */}
-        <ul className="hidden md:flex items-center space-x-6 text-white text-xl relative">
+        <ul className="hidden md:flex items-center space-x-6 text-white text-base relative">
           <li>
             <Link
               to="/"
@@ -66,17 +66,11 @@ const Header = () => {
               Home
             </Link>
           </li>
-          <li onMouseEnter={() => setShowServicesDropdown(true)}>
-            <Link
-              to="/services"
-              className={`${
-                location.pathname === "/services"
-                  ? "text-orange-500 font-bold"
-                  : ""
-              } hover:text-orange-500`}
-            >
-              Services{" "}
-            </Link>
+          <li
+            className="hover:text-orange-500"
+            onMouseEnter={() => setShowServicesDropdown(true)}
+          >
+            Services
           </li>
           <li>
             <Link
@@ -143,32 +137,24 @@ const Header = () => {
             </div>
 
             {/* Links for large screens */}
-            <ul className="hidden md:flex space-x-6 text-xl text-slate-50 relative">
+            <ul className="hidden md:flex space-x-6 text-base text-slate-50 relative">
               <li>
                 <Link
                   to="/"
                   onClick={() => setShowServicesDropdown(false)}
                   className={`${
-                    location.pathname === "/"
-                      ? "text-orange-500 font-bold"
-                      : ""
+                    location.pathname === "/" ? "text-orange-500 font-bold" : ""
                   } hover:text-orange-500`}
                 >
                   Home
                 </Link>
               </li>
-              <li onMouseEnter={() => setShowServicesDropdown(true)}>
-                <Link
-                  to="/services"
-                  onClick={() => setShowServicesDropdown(false)}
-                  className={` ${
-                    location.pathname === "/services"
-                      ? "text-orange-500 font-bold"
-                      : ""
-                  } hover:text-orange-500`}
-                >
-                  Services{" "}
-                </Link>
+              <li
+              
+                onMouseEnter={() => setShowServicesDropdown(true)}
+                onClick={() => setShowServicesDropdown(false)}
+              >
+                Services
               </li>
               <li>
                 <Link
