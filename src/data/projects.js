@@ -1,26 +1,24 @@
 // projectsData.js
-import project1 from "../assets/images/p2.webp";
-import project2 from "../assets/images/p1.webp";
-import project3 from "../assets/images/p3.webp";
+import project from "../assets/images/p3.webp";
 
 const projectsData = [
   {
     id: 1,
-    title: "Project One",
+    title: "Jusoor News",
     description: "A modern web app designed to improve productivity and efficiency.",
-    image: project1,
+    image: project,
   },
   {
     id: 2,
-    title: "Project Two",
+    title: "CashFlow",
     description: "An innovative e-commerce platform for seamless shopping.",
-    image: project2,
+    image: project,
   },
   {
     id: 3,
-    title: "Project Three",
+    title: "Show Republic",
     description: "A mobile app solution for real-time collaboration and communication.",
-    image: project3,
+    image: project,
   },
 ];
 

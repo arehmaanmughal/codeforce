@@ -23,7 +23,7 @@ const Projects = () => {
               key={project.id}
               className="bg-slate-800 p-6 shadow-md rounded-lg transform transition-transform duration-500 hover:scale-105"
             >
-             <Link to={`/projects/${project.id}`}>
+             <Link to="">
                 {/* Lazy load image with blur effect and placeholder */}
                 <div className="w-full h-auto relative">
                   <LazyLoadImage
