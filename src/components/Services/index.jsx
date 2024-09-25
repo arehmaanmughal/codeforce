@@ -5,10 +5,12 @@ const Services = () => {
   return (
     <section id="services" className="py-12">
       <div className="container mx-auto text-center px-4">
-        <h2 className="text-3xl font-semibold text-orange-500">Our Services</h2>
-        <p className="mt-2 text-slate-300">
-          We offer a range of services to help you achieve your business goals.
+        <h2 className="text-4xl font-bold text-orange-600">Our Expertise</h2>
+        <p className="mt-4 text-lg text-slate-200">
+          Empowering your business with cutting-edge technology solutions,
+          tailored to drive innovation and growth.
         </p>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {servicesData.map((service) => {
             const { id, title, description, icon: Icon, link } = service;
