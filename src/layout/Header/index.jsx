@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-10 transition-colors duration-300  py-8 ${
-        isHomePage && scrollPosition > 100
+        isHomePage && scrollPosition > 50
           ? "bg-slate-950"
           : !isHomePage
           ? "bg-slate-950"
