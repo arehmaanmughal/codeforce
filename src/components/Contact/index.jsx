@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <section id="contact" className="pb-12 px-4">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-semibold text-orange-500">Contact Us</h2>
+        <h2 className="text-3xl font-semibold text-slate-50">Contact <span className="text-orange-500">Us</span></h2>
         <form className="mt-8 w-full lg:w-1/2 mx-auto" onSubmit={handleForm}>
           <div className="flex flex-col space-y-4">
             <input

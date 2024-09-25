@@ -6,7 +6,7 @@ const About = () => {
     <section id="about" className="py-12">
       <div className="container mx-auto space-y-12 px-4">
         <h2 className="text-3xl font-semibold text-slate-50 text-center">
-          Who <span className="text-orange-500">We Are?</span>
+          Who <span className="text-orange-500">We </span>Are?
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <LazyLoadImage
