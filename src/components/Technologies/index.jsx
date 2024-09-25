@@ -2,7 +2,6 @@ import React from 'react';
 import Marquee from 'react-marquee-slider';
 import TailwindCSS from '../../assets/tailwind.svg';
 import ReactLogo from '../../assets/react.svg';
-import NextJs from '../../assets/nextjs.svg';
 import Javascript from '../../assets/javascript.svg';
 import Python from '../../assets/python.svg';
 import Java from '../../assets/java.svg';
@@ -19,7 +18,19 @@ const Technologies = () => {
   const logos = [
     { src: TailwindCSS, alt: 'Tailwind CSS' },
     { src: ReactLogo, alt: 'React JS' },
-    { src: NextJs, alt: 'Next.js' },
+    { src: Javascript, alt: 'Javascript' },
+    { src: Python, alt: 'Python' },
+    { src: Java, alt: 'Java' },
+    { src: Css, alt: 'CSS' },
+    { src: Bootstrap, alt: 'Bootstrap' },
+    { src: Angular, alt: 'Angular' },
+    { src: Ruby, alt: 'Ruby' },
+    { src: Postman, alt: 'Postman' },
+    { src: Figma, alt: 'Figma' },
+    { src: Php, alt: 'PHP' },
+    { src: Adobe, alt: 'Adobe' },
+    { src: TailwindCSS, alt: 'Tailwind CSS' },
+    { src: ReactLogo, alt: 'React JS' },
     { src: Javascript, alt: 'Javascript' },
     { src: Python, alt: 'Python' },
     { src: Java, alt: 'Java' },

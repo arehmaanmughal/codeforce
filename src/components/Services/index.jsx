@@ -4,9 +4,11 @@ import servicesData from "../../data/services";
 const Services = () => {
   return (
     <section id="services" className="py-12">
-      <div className="container mx-auto text-center px-4">
-        <h2 className="text-4xl font-bold text-orange-600">Our Expertise</h2>
-        <p className="mt-4 text-lg text-slate-200">
+      <div className="container mx-auto  px-4">
+        <h2 className="text-4xl font-bold text-slate-50 text-center">
+          Our <span className="text-orange-600">Expertise</span>
+        </h2>
+        <p className="mt-4 text-lg text-slate-200 text-center">
           Empowering your business with cutting-edge technology solutions,
           tailored to drive innovation and growth.
         </p>
@@ -17,12 +19,14 @@ const Services = () => {
             return (
               <div
                 key={id}
-                className="p-6 bg-slate-800 text-slate-50 shadow-md rounded-md hover:bg-slate-50 hover:text-slate-800"
+                className="p-6 bg-slate-800 text-slate-50 shadow-md rounded-md hover:bg-slate-50 hover:text-slate-800 flex items-center"
               >
-                <Link to={link} className="block">
-                  <Icon size={32} className="mx-auto mb-4" color="#f97316" />
-                  <h3 className="text-xl font-semibold">{title}</h3>
-                  <p className="mt-2">{description}</p>
+                <Link to={link} className="flex items-center gap-6">
+                  <Icon size={60} className="mb-4" color="#f97316" />
+                  <div>
+                    <h3 className="text-2xl font-semibold">{title}</h3>
+                    <p className="mt-2 text-sm">{description}</p>
+                  </div>
                 </Link>
               </div>
             );

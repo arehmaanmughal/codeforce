@@ -6,7 +6,9 @@ const Team = () => {
   return (
     <section id="team" className="py-12 px-4">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold text-orange-600">Our Leadership</h2>
+        <h2 className="text-4xl font-bold text-slate-50">
+          Our <span className="text-orange-600">Leadership</span>
+        </h2>
         <p className="mt-4 text-lg text-slate-200">
           Meet the talented professionals driving innovation and success at our
           company.

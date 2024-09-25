@@ -7,8 +7,8 @@ const Projects = () => {
   return (
     <section id="portfolio" className="py-12 px-4">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-orange-600 text-center">
-          Our Portfolio
+        <h2 className="text-4xl font-bold text-slate-50 text-center">
+          Our <span className="text-orange-600">Portfolio</span>
         </h2>
         <p className="mt-4 text-lg text-slate-200 text-center">
           Explore a curated collection of projects showcasing our expertise and
