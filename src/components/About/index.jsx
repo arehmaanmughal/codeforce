@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section id="about" className="py-12">
       <div className="container mx-auto space-y-12 px-4">
-        <h2 className="text-3xl font-semibold text-orange-500 text-center">About Us</h2>
+        <h2 className="text-3xl font-semibold text-orange-500 text-center">Who We Are?</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
          
             <LazyLoadImage

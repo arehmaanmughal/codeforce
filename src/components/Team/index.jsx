@@ -6,8 +6,11 @@ const Team = () => {
   return (
     <section id="team" className="py-12 px-4">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-semibold text-orange-500">Meet Our Team</h2>
-        <p className="mt-2 text-slate-300">Our dedicated team of professionals</p>
+        <h2 className="text-4xl font-bold text-orange-600">Our Leadership</h2>
+        <p className="mt-4 text-lg text-slate-200">
+          Meet the talented professionals driving innovation and success at our
+          company.
+        </p>
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {teamData.map((member, index) => (
@@ -21,7 +24,9 @@ const Team = () => {
                 alt={member.name}
                 className="w-32 h-32 rounded-full mx-auto"
               />
-              <h3 className="mt-4 text-lg font-medium text-slate-50">{member.name}</h3>
+              <h3 className="mt-4 text-lg font-medium text-slate-50">
+                {member.name}
+              </h3>
               <p className="text-slate-300">{member.role}</p>
             </Link>
           ))}
