@@ -10,7 +10,7 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "CashFlow",
+    title: "Cash Flow",
     description: "An innovative e-commerce platform for seamless shopping.",
     image: project,
   },

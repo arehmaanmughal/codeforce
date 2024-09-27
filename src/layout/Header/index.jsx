@@ -31,11 +31,11 @@ const Header = () => {
   const isHomePage = location.pathname === "/";
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-10 transition-colors duration-300  py-8 ${
+      className={`fixed top-0 left-0 w-full z-10 transition-colors duration-300  py-6 ${
         isHomePage && scrollPosition > 50
-          ? "bg-slate-950"
+          ? "bg-slate-950 shadow-2xl shadow-slate-400"
           : !isHomePage
-          ? "bg-slate-950"
+          ? "bg-slate-950 shadow-2xl shadow-slate-50"
           : "bg-transparent"
       }`}
     >
@@ -114,7 +114,7 @@ const Header = () => {
       {/* Services dropdown */}
       {showServicesDropdown && (
         <motion.div
-          className="absolute left-0 top-0 bg-blue-500 pt-8 pb-6 text-slate-50 z-0 w-full"
+          className="absolute left-0 top-0 bg-blue-500 pt-6 pb-6 text-slate-50 z-0 w-full"
           initial={{ y: -300, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}

@@ -26,10 +26,10 @@ const Team = () => {
                 alt={member.name}
                 className="w-32 h-32 rounded-full mx-auto"
               />
-              <h3 className="mt-4 text-lg font-medium text-slate-50">
+              <h3 className="mt-4 text-xl font-medium text-slate-50">
                 {member.name}
               </h3>
-              <p className="text-slate-300">{member.role}</p>
+              <p className="text-slate-300 text-sm">{member.role}</p>
             </Link>
           ))}
         </div>
