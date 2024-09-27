@@ -12,7 +12,7 @@ const Hero = () => {
             Empowering <span className="text-orange-500">Innovation</span> with
             Code<span className="text-orange-500">Force</span>
           </h2>
-          <p className="text-lg text-slate-50">
+          <p className="text-lg text-slate-50 text-balance">
             Your trusted partner in delivering cutting-edge software solutions.
             From web development to cloud integration, we transform your
             business challenges into digital success.
