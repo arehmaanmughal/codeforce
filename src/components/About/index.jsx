@@ -1,6 +1,6 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import office from "../../assets/images/web-dev.webp";
+import office from "../../assets/images/office.webp";
 const About = () => {
   return (
     <section id="about">
