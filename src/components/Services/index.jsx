@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import servicesData from "../../data/services";
 const Services = () => {
   return (
-    <section id="services" className="py-12">
+    <section id="services">
       <div className="container mx-auto text-center px-4">
         <h2 className="text-4xl font-bold text-slate-50">
           Our <span className="text-orange-600">Expertise</span>

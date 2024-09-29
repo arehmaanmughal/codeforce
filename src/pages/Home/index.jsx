@@ -60,7 +60,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className="space-y-12">
       <Suspense fallback={<div>Loading...</div>}>
         <SectionAnimation {...heroAnimation}>
           <Hero />

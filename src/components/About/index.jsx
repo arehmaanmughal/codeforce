@@ -1,9 +1,9 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import office from "../../assets/images/office.jpg";
+import office from "../../assets/images/web-dev.webp";
 const About = () => {
   return (
-    <section id="about" className="py-12">
+    <section id="about">
       <div className="container mx-auto space-y-12 px-4">
         <h2 className="text-3xl font-semibold text-slate-50 text-center">
           Who <span className="text-orange-500">We </span>Are?

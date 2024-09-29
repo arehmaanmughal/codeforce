@@ -5,7 +5,7 @@ import "./style.css";
 
 const Hero = () => {
   return (
-    <section className="h-screen sm:h-[600px] flex items-center justify-center text-center bg">
+    <section className="h-screen flex items-center justify-center text-center bg">
       <div className="bg-slate-800 bg-opacity-70 h-full w-full p-10 flex items-center justify-center">
         <div className="space-y-6 space-x-3 max-w-4xl">
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[3rem] sm:leading-[4rem] md:leading-[5rem] lg:leading-[6rem] font-bold text-slate-50 inline-block capitalize">

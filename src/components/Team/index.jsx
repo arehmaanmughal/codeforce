@@ -4,8 +4,8 @@ import teamData from "../../data/team";
 
 const Team = () => {
   return (
-    <section id="team" className="py-12 px-4">
-      <div className="container mx-auto text-center">
+    <section id="team">
+      <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold text-slate-50">
           Our <span className="text-orange-600">Leadership</span>
         </h2>

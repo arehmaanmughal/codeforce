@@ -45,7 +45,7 @@ const Technologies = () => {
   ];
 
   return (
-    <section className="py-12">
+    <section className="">
       <Marquee velocity={20} resetAfterTries={200} className="flex items-center">
         {logos.map((logo, index) => (
           <div key={index} className="mx-6">
